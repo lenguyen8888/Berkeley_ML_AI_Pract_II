@@ -1,0 +1,13 @@
+
+After considering the business understanding, we want to get familiar with our data. Write down some steps that you would take to get to know the dataset and identify any quality issues within. Take time to get to know the dataset and explore what information it contains and how this could be used to inform your business understanding.
+
+columns names
+id,region,price,year,manufacturer,model,condition,cylinders,fuel,odometer,title_status,transmission,VIN,drive,size,type,paint_color,state
+
+Here's how the data set looks like
+1. There are many rows without any fields other than state => we should skip over these rows
+2. Can skip if we don't have price of price == 0
+3. year is integer field, can skip if we don't have year
+4. manufacturer and model are strings, some time missing one entry
+5. condition string can be blank
+6. cylinders can be stripped of ' cylinders' or 0 for others or blank
